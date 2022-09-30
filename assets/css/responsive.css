@@ -1,0 +1,106 @@
+@media screen and (max-width: 1310px) {
+  .sidebar {
+    left: -300px;
+    transition: all 0.25s linear;
+  }
+  .sidebar-closer {
+    display: block;
+  }
+  .is-showed {
+    left: 0;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .menu-mobile {
+    display: block;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content-avatar::after,
+  .content-avatar::before {
+    display: none;
+  }
+  .about-info {
+    flex-wrap: wrap;
+  }
+  .about-detail {
+    width: 100%;
+    margin-bottom: 120px;
+  }
+  .about-skill {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .service-list,
+  .portfolio-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-inteligent {
+    flex-wrap: wrap;
+  }
+  .about-edu {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about-edu:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .content-about {
+    min-height: 120px;
+  }
+  .content-info {
+    width: 100%;
+  }
+  .content-avatar {
+    display: none;
+  }
+  .service-list,
+  .portfolio-list {
+    grid-template-columns: 1fr;
+  }
+  .contact-social {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .contact-form-name,
+  .contact-form-email {
+    width: 100%;
+  }
+  .form-submit {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .about-detail {
+    flex-wrap: wrap;
+  }
+  .about-contact {
+    width: 100%;
+  }
+  .about-btn {
+    display: flex;
+    flex-wrap: wrap;
+    bottom: -180px;
+  }
+  .about-button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .about-skill {
+    margin-top: 60px;
+  }
+  .contact-social {
+    grid-template-columns: 1fr;
+  }
+}
